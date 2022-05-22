@@ -1,0 +1,40 @@
+::-webkit-scrollbar {
+    width: 8px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #F2F2F2;
+    border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(155, 152, 152);
+    border-radius: 100px;
+}
+
+
+.home-page{
+    margin-bottom: 100px;
+}
+
+.section{
+    width: 1080px;
+    display: flex;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.top-section-header, .bottom-section-header{
+    display: flex;
+}
+
+a{
+    margin-bottom: 15px;
+}
+
+a > img{
+    margin-right: 15px;
+}

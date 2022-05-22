@@ -1,0 +1,51 @@
+.card {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.img-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.img-wrapper>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card>p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    /* 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden; */
+}

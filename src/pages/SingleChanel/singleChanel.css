@@ -1,0 +1,124 @@
+.big-img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.single-chanel {
+    margin-bottom: 100px;
+}
+
+.single-chanel-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.left-side>div>h3 {
+    margin: 0;
+}
+
+.left-side>div>p {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+
+}
+
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.right-side-btn {
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+}
+
+.single-chanel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+}
+
+.single-chanel-header>h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 50px 0 0;
+    color: #C2C2C2;
+}
+
+.header-links>a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+    margin-right: 30px;
+}
+
+.single-chanel-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    /* margin-bottom: 100px; */
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section>div>h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 25px;
+    color: #19202C;
+    margin-bottom: 0;
+}
+
+.left-section>div>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    color: #000000;
+    opacity: 0.6;
+    margin-top: 0;
+}
+
+.right-section {
+    margin-right: 50px;
+}
+
+.section {
+    width: 1080px;
+    display: flex;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
