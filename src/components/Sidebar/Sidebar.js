@@ -24,10 +24,21 @@ import DarkMode from "../../assets/Images/dark-mode.png"
 import LightMode from "../../assets/Images/light-mode.png"
 
 import "./sidebar.css"
+import { Context } from '../../context/themeContext'
 // import axios from 'axios'
 // import ChanelLink from '../ChanelLink/ChanelLink'
 
 const Sidebar = () => {
+
+    const {state, setState} = React.useContext(Context)
+    console.log(state);
+    const lightMode = () => {
+        setState(false)
+    }
+
+    const darkMode = () => {
+        setState(true)
+    }
 
     const [theme, setTheme] = useState(true)
 
@@ -86,18 +97,18 @@ const Sidebar = () => {
                         <ChanelLink chanelId={item.albumId} chanelName="Chanel Name" img={item.thumbnailUrl}/>
                     )) : ""
             } */}
-            <NavLink className={`link`} to="/chanel/4"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Single Chanel</NavLink>
-            <NavLink className={`link`} to="/chanel/5"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> History</NavLink>
-            <NavLink className={`link`} to="/chanel/6"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Watch Later</NavLink>
-            <NavLink className={`link`} to="/chanel/7"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Favourites</NavLink>
-            <NavLink className={`link`} to="/chanel/8"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Liked Videos</NavLink>
-            <NavLink className={`link`} to="/chanel/9"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Music </NavLink>
-            <NavLink className={`link`} to="/chanel/10"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Games  </NavLink>
+            <NavLink className={`link`} to="/chanel/4"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> React Teacher</NavLink>
+            <NavLink className={`link`} to="/chanel/5"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Vue Teacher</NavLink>
+            <NavLink className={`link`} to="/chanel/6"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Angular Teacher</NavLink>
+            <NavLink className={`link`} to="/chanel/7"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Svalte Teacher</NavLink>
+            <NavLink className={`link`} to="/chanel/8"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Next Teacher</NavLink>
+            <NavLink className={`link`} to="/chanel/9"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> VueX Teacher </NavLink>
+            <NavLink className={`link`} to="/chanel/10"><img src={Avatar} alt="Chanel avatar" width="25" height="25" /> Js Teacher  </NavLink>
             <br />
 
             <ul className={`mode-setting ${theme ? "sidebar-hidden" : "sidebar-block"}`}>
-                <li className='mode light-mode'> <img src={LightMode} className='mode-img' alt='Mode Img' /> Light </li>
-                <li className='mode dark-mode'> <img src={DarkMode} className='mode-img' alt='Mode Img' /> Dark  </li>
+                <li className='mode light-mode' onClick={lightMode} > <img src={LightMode} className='mode-img' alt='Mode Img' /> Light </li>
+                <li className='mode dark-mode' onClick={darkMode} > <img src={DarkMode} className='mode-img' alt='Mode Img' /> Dark  </li>
             </ul>
             <NavLink className={`link`} to="#" onClick={toggleTheme}><Setting /> Setting </NavLink>
 

@@ -5,8 +5,12 @@ import Sidebar from './components/Sidebar/Sidebar'
 import Main from './components/Main/Main'
 
 import "./assets/app.css"
+import { Context } from './context/themeContext'
 
 const AuthenticationApp = () => {
+
+
+  const {state} = React.useContext(Context)
 
   const [visible, setVisile] = useState(false)
 
@@ -15,7 +19,7 @@ const AuthenticationApp = () => {
   }
 
   return (
-    <div className='app'>
+    <div className={`app ${state ? "dark_mode" : ""}`}>
       <div className={`sidebar ${visible ? "block" : "none"}`}>
         <Sidebar />
       </div>

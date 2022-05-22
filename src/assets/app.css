@@ -18,14 +18,20 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: white;
-    color: black;
+    /* background: rgba(0, 0, 0, 0.856); */
+    /* color: rgb(255, 255, 255); */
     font-family: 'Mulish', sans-serif;
 }
 
 .app {
     display: flex;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
 
+.dark_mode{
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
 }
 
 .sidebar {

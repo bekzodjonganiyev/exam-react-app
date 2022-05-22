@@ -37,7 +37,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(216, 216, 216, 0.5);;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+    margin-bottom: 50px;
 }
 
 .about-video>div>h2 {
@@ -58,6 +59,40 @@
     margin-top: 0;
 }
 
-span {
+.ml {
     margin-left: 20px;
+}
+
+.about-chanel {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-chanel>div>h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 33px;
+    color: #19202C;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+    margin-top: 0;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.6;
 }
