@@ -122,3 +122,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+.dark_color{
+    color: white;
+}

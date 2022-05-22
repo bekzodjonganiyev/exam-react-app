@@ -12,11 +12,14 @@ import Oval3 from "../../assets/Images/Oval-3.png"
 import "./singleChanel.css"
 import axios from 'axios'
 import CardLink from '../../components/CardLink/CardLink'
+// import { Context } from '../../context/themeContext'
 
 
 const SingleChanel = () => {
 
     const { id } = useParams()
+
+    // const {state} = React.useContext(Context)
 
     const [chanel, setChanel] = useState({
         isFatched: false,

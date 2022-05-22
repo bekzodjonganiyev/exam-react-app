@@ -5,10 +5,14 @@ import YtLogo from "../../assets/Images/you-tube-logo.png"
 import Avatar from "../../assets/Images/Userpic.png"
 
 import "./header.css"
+import { Context } from '../../context/themeContext'
 
 const Header = ({ openSidebar }) => {
+
+    const {state} = React.useContext(Context)
+
     return (
-        <header className='header'>
+        <header className={`header ${ state ? "" : "dark_theme"}`}>
             <div className='left-elements'>
                 <div>
                     <button type='button' onClick={openSidebar} className="open-close">
