@@ -27,6 +27,14 @@
     overflow-y: hidden;
 }
 
+.section_{
+    width: 1200px;
+    display: flex;
+    margin-bottom: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
 .top-section-header, .bottom-section-header{
     display: flex;
 }

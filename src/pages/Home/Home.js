@@ -98,7 +98,7 @@ const Home = () => {
           <img src={AvatarHome1} alt="Avatar Home 1" />
           <h3>Dollie Blair</h3>
         </Link>
-        <div className='section'>
+        <div className={`section `}>
           {
             homeData.isFatched ?
               homeData.data.map(item => (
@@ -111,7 +111,7 @@ const Home = () => {
       {/*MiDDLE SECTION*/}
       <div className='middle-section'>
         <h3>Recommended</h3>
-        <div className='section'>
+        <div className={`section `}>
           {
             middleData.isFatched ?
               middleData.data.map(item => (
@@ -127,7 +127,7 @@ const Home = () => {
           <img src={AvatarHome2} alt="Avatar Home 1" />
           <h3>Food & Drink</h3>
         </Link>
-        <div className='section'>
+        <div className={`section `}>
           {
             bottomData.isFatched ?
               bottomData.data.map(item => (

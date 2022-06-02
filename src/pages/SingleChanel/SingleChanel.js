@@ -118,13 +118,13 @@ const SingleChanel = () => {
             </div>
 
             <div className='section'>
-          {
-            chanel.isFatched ?
-              chanel.data.map(item => (
-                <CardLink id={item.id} img={item.thumbnailUrl} title={item.title} key={item.id} />
-              )) : ""
-          }
-        </div>
+                {
+                    chanel.isFatched ?
+                        chanel.data.splice(0, 10).map(item => (
+                            <CardLink id={item.id} img={item.thumbnailUrl} title={item.title} key={item.id} />
+                        )) : ""
+                }
+            </div>
 
         </div>
     )

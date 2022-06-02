@@ -12,7 +12,7 @@ const Header = ({ openSidebar }) => {
     const {state} = React.useContext(Context)
 
     return (
-        <header className={`header ${ state ? "" : "dark_theme"}`}>
+        <header className={`header ${ state ? "dark_theme" : ""}`}>
             <div className='left-elements'>
                 <div>
                     <button type='button' onClick={openSidebar} className="open-close">

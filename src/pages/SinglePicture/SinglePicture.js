@@ -28,6 +28,15 @@ const SinglePicture = () => {
     })
 
     useEffect(() => {
+        if (id > 100) {
+            setAlbumId(Math.floor(Math.random() * 101));
+        }
+        else{
+            setAlbumId(id)
+        }
+    }, [id])
+
+    useEffect(() => {
 
         //SHOW PICTURE 
         axios.get(`https://jsonplaceholder.typicode.com/photos?id=${id}`)
@@ -65,14 +74,7 @@ const SinglePicture = () => {
 
     }, [id,albumId])
 
-    useEffect(() => {
-        if (id > 100) {
-            setAlbumId(Math.floor(Math.random() * 101));
-        }
-        else{
-            setAlbumId(id)
-        }
-    }, [id])
+    
 
     return (
         <div className="single-picture-page">
@@ -142,9 +144,12 @@ const SinglePicture = () => {
                 <div style={{ margin: "0 auto" }}>
                     {
                         pictureList.isFatched ?
-                            pictureList.data.splice(0, 20).map(item => (
+                            pictureList.data.splice(0, 10).map(item => (
+                                <>
+                                <h3>kelyapti...</h3>
                                 <CardLink id={item.id} img={item.thumbnailUrl} title={item.title} key={item.id} />
-                            )) : ""
+                                </>
+                            )) : (<h3>Loading...</h3>)
                     }
                 </div>
             </div>
